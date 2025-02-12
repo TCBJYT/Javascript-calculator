@@ -2,10 +2,35 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS</title>
-    <link rel="sytlesheet" href="css.css">
-<script></script>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="src/output.css">
+    <script src="js.js"></script>
 </head>
 <body>
+    <form name="Calculation">
+         <!--Text box-->
+   
 
+    <div class="center">
+        <input type="text" id="Textbox"><br><br>
+        <button type="button" class="number-btn text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-0 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" id="0" onclick="">0</button>
+        <button type="button" class="number-btn text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-0 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" id="1" onclick='numbers(1)'>1</button>
+        <button type="button" class="number-btn" id="2" onclick="numbers(2)">2</button>
+        <button type="button" class="number-btn" onclick="numbers('+')">+</button><br><br>
+        <button type="button" class="number-btn" id="3" onclick="numbers(3)">3</button>
+        <button type="button" class="number-btn" id="4" onclick="numbers(4)">4</button>
+        <button type="button" class="number-btn" id="5" onclick="numbers(5)">5</button>
+        <button type="button" class="number-btn" onclick="numbers('-')">-</button><br><br>
+        <button type="button" class="number-btn" id="6" onclick="numbers(6)">6</button>
+        <button type="button" class="number-btn" id="7" onclick="numbers(7)">7</button>
+        <button type="button" class="number-btn" id="8" onclick="numbers(8)">8</button>
+        <button type="button" class="number-btn" onclick="numbers('*')">*</button><br><br>
+        <button type="button" class="number-btn" id="9" onclick="numbers(9)">9</button>
+        <button type="button"  id="equal" onclick="equal()">=</button>
+        <button type="button"  id="clear" onclick="Clear()">C</button>
+        <button type="button" class="number-btn" onclick="numbers('/')">/</button><br><br>
+    </div>
+</form>
+</div>
 </body>
