@@ -8,29 +8,39 @@
     <script src="js.js"></script>
 </head>
 <body>
-    <form name="Calculation">
-         <!--Text box-->
-   
-
-    <div class="center">
-        <input type="text" id="Textbox"><br><br>
-        <button type="button" class="number-btn text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-0 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" id="0" onclick="">0</button>
-        <button type="button" class="number-btn text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-0 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" id="1" onclick='numbers(1)'>1</button>
-        <button type="button" class="number-btn" id="2" onclick="numbers(2)">2</button>
-        <button type="button" class="number-btn" onclick="numbers('+')">+</button><br><br>
-        <button type="button" class="number-btn" id="3" onclick="numbers(3)">3</button>
-        <button type="button" class="number-btn" id="4" onclick="numbers(4)">4</button>
-        <button type="button" class="number-btn" id="5" onclick="numbers(5)">5</button>
-        <button type="button" class="number-btn" onclick="numbers('-')">-</button><br><br>
-        <button type="button" class="number-btn" id="6" onclick="numbers(6)">6</button>
-        <button type="button" class="number-btn" id="7" onclick="numbers(7)">7</button>
-        <button type="button" class="number-btn" id="8" onclick="numbers(8)">8</button>
-        <button type="button" class="number-btn" onclick="numbers('*')">*</button><br><br>
-        <button type="button" class="number-btn" id="9" onclick="numbers(9)">9</button>
-        <button type="button"  id="equal" onclick="equal()">=</button>
-        <button type="button"  id="clear" onclick="Clear()">C</button>
-        <button type="button" class="number-btn" onclick="numbers('/')">/</button><br><br>
+    <div class="flex justify-center ">
+<div class="flex justify-center items-stretch grid h-56 content-normal gap-4">
+    <div class=" center max-w-sm p-6 bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
+        <form name="Calculation">
+    <div class="flex items-stretch justify-center">
+        <input class="center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" id="Textbox">
+    </div>
+    <div class="flex items-stretch justify-center">
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" id="0" onclick="">0</button>
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" id="1" onclick='numbers(1)'>1</button>
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" id="2" onclick="numbers(2)">2</button>
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" onclick="numbers('+')">+</button>
+    </div>
+    <div class="flex items-stretch justify-center">
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" id="3" onclick="numbers(3)">3</button>
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" id="4" onclick="numbers(4)">4</button>
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" id="5" onclick="numbers(5)">5</button>
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" onclick="numbers('-')">-</button>
+    </div>
+    <div class="flex items-stretch justify-center">
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" id="6" onclick="numbers(6)">6</button>
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" id="7" onclick="numbers(7)">7</button>
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" id="8" onclick="numbers(8)">8</button>
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" onclick="numbers('*')">*</button>
+    </div>
+    <div class="flex items-stretch justify-center">
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" id="9" onclick="numbers(9)">9</button>
+        <button type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-1 mb-1 dark:focus:ring-yellow-900" id="equal" onclick="equal()">=</button>
+        <button type="button"  class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-1 mb-1 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900" id="clear" onclick="Clear()">C</button>
+        <button type="button" class="number-btn text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-1 mb-1" onclick="numbers('/')">/</button>
     </div>
 </form>
+</div>
+  </div>
 </div>
 </body>
